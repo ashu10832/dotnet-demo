@@ -8,7 +8,7 @@ pipeline {
                 bat 'dotnet build'
             }
         }
-        stage test('Test'){
+        stageTest('Test'){
             steps{
                 bat 'dotnet test'
             }

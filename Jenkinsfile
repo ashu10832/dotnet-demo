@@ -21,7 +21,7 @@ pipeline {
         stage('Run'){
             steps{
                 bat 'cd firstcoreproject'
-                bat 'dotnet run'
+                bat 'dotnet run --project firstcoreproject'
             }
         }
     }

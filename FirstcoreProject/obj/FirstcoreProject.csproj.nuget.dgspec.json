@@ -44,6 +44,19 @@
               "target": "Package",
               "version": "[16.7.1, )"
             },
+            "OpenCover": {
+              "target": "Package",
+              "version": "[4.7.922, )"
+            },
+            "OpenCoverToCoberturaConverter": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[0.2.4, )"
+            },
+            "coverlet.msbuild": {
+              "target": "Package",
+              "version": "[2.9.0, )"
+            },
             "xunit": {
               "target": "Package",
               "version": "[2.4.1, )"

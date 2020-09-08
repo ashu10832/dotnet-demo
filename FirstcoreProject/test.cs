@@ -1,6 +1,6 @@
-using firstlibrary;
 using System;
 using Xunit;
+using firstlibrary;
 
 namespace FirstcoreProject
 {
@@ -11,7 +11,7 @@ namespace FirstcoreProject
         {
         //Given
         var obj = new firstlibrary.Addition();
-        Assert.Equal("ok",obj.display());
+        Assert.Equal("ok",obj.execute());
         
         //When
         

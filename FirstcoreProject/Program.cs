@@ -9,7 +9,7 @@ namespace FirstcoreProject
         {
             Console.WriteLine("Hello World!");
             var obj = new firstlibrary.Addition();
-            obj.display();
+            obj.execute();
         }
     }
 }

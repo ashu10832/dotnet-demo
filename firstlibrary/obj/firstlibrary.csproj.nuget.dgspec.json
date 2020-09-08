@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ashgupta25\\desktop\\projects\\networkspace\\firstlibrary\\firstlibrary.csproj": {}
+    "C:\\users\\ashgupta25\\desktop\\projects\\networkspace\\firstlibrary\\firstlibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ashgupta25\\desktop\\projects\\networkspace\\firstlibrary\\firstlibrary.csproj": {
+    "C:\\users\\ashgupta25\\desktop\\projects\\networkspace\\firstlibrary\\firstlibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ashgupta25\\desktop\\projects\\networkspace\\firstlibrary\\firstlibrary.csproj",
+        "projectUniqueName": "C:\\users\\ashgupta25\\desktop\\projects\\networkspace\\firstlibrary\\firstlibrary.csproj",
         "projectName": "firstlibrary",
-        "projectPath": "C:\\Users\\ashgupta25\\desktop\\projects\\networkspace\\firstlibrary\\firstlibrary.csproj",
+        "projectPath": "C:\\users\\ashgupta25\\desktop\\projects\\networkspace\\firstlibrary\\firstlibrary.csproj",
         "packagesPath": "C:\\Users\\ashgupta25\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ashgupta25\\desktop\\projects\\networkspace\\firstlibrary\\obj\\",
+        "outputPath": "C:\\users\\ashgupta25\\desktop\\projects\\networkspace\\firstlibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ashgupta25\\AppData\\Roaming\\NuGet\\NuGet.Config"

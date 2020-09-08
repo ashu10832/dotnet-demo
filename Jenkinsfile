@@ -6,7 +6,6 @@ pipeline {
             steps{
                 bat 'git log'
                 bat 'dotnet build'
-                bat 'cd firstcoreproject'
             }
         }
         stage('Test'){
@@ -21,6 +20,7 @@ pipeline {
         }
         stage('Run'){
             steps{
+                bat 'cd firstcoreproject'
                 bat 'dotnet run'
             }
         }

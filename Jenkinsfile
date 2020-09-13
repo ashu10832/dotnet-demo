@@ -10,14 +10,13 @@ pipeline {
         }
         stage('Unit Test'){
             steps{
-	            bat 'dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura'
-                bat 'reportgenerator -reports:**\\firstcoreProject\\coverage.cobertura.xml -targetdir:coveragereport -reporttypes:html'
+	            bat 'dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover'
                 step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: 'ashu10832@gmail.com', sendToIndividuals: false])
             }
         }
         stage('Code Coverage'){
             steps{
-                cobertura autoUpdateHealth: false, autoUpdateStability: false, coberturaReportFile: '**\\FirstcoreProject\\coverage.cobertura.xml', conditionalCoverageTargets: '70, 80, 80', failUnhealthy: true, failUnstable: true, lineCoverageTargets: '80, 80, 80', maxNumberOfBuilds: 0, methodCoverageTargets: '80, 80, 80', onlyStable: false, sourceEncoding: 'ASCII', zoomCoverageChart: false
+                publishCoverage adapters: [opencoverAdapter(path: '**\\FirstcoreProject\\coverage.opencover.xml', thresholds: [[failUnhealthy: true, thresholdTarget: 'Line', unhealthyThreshold: 80.0, unstableThreshold: 80.0]])], sourceFileResolver: sourceFiles('NEVER_STORE')
                 step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: 'ashu10832@gmail.com', sendToIndividuals: false])
             }
         }

@@ -8,8 +8,8 @@ namespace FirstcoreProject
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            var obj = new firstlibrary.Addition();
-            obj.execute();
+            var cal = new firstlibrary.Calculator();
+            System.Console.WriteLine(cal.add(2,3));
         }
     }
 }

@@ -11,6 +11,7 @@ pipeline {
         stage('Unit Test'){
             steps{
 	            bat 'dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura'
+                bat 'reportgenerator -reports:**\\firstcoreProject\\coverage.cobertura.xml -targetdir:coveragereport -reporttypes:html'
                 step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: 'ashu10832@gmail.com', sendToIndividuals: false])
             }
         }

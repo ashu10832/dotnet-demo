@@ -20,12 +20,12 @@ namespace FirstcoreProject
         Assert.Equal(7,cal.subtract(10,3));
         }
 
-        // [Fact]
-        // public void shouldMultiplyTwoNumbers()
-        // {
-        // var cal = new firstlibrary.Calculator();
-        // Assert.Equal(30,cal.multiply(10,3));
-        // }
+        [Fact]
+        public void shouldMultiplyTwoNumbers()
+        {
+        var cal = new firstlibrary.Calculator();
+        Assert.Equal(30,cal.multiply(10,3));
+        }
 
     }
 }

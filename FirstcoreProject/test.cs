@@ -6,17 +6,17 @@ namespace FirstcoreProject
 {
     public class test
     {
-        [Fact]
-        public void TestName()
-        {
-        //Given
-        var obj = new firstlibrary.Addition();
-        Assert.Equal("ok",obj.execute());
+        // [Fact]
+        // public void TestName()
+        // {
+        // //Given
+        // var obj = new firstlibrary.Addition();
+        // Assert.Equal("ok",obj.execute());
         
-        //When
+        // //When
         
-        //Then
-        }
+        // //Then
+        // }
 
     }
 }

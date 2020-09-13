@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\users\\ashgupta25\\desktop\\projects\\networkspace\\firstcoreproject\\FirstcoreProject.csproj": {}
+    "C:\\users\\ashgupta25\\desktop\\projects\\networkspace\\FirstCoreProject\\FirstcoreProject.csproj": {}
   },
   "projects": {
-    "C:\\users\\ashgupta25\\desktop\\projects\\networkspace\\firstcoreproject\\FirstcoreProject.csproj": {
+    "C:\\users\\ashgupta25\\desktop\\projects\\networkspace\\FirstCoreProject\\FirstcoreProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\users\\ashgupta25\\desktop\\projects\\networkspace\\firstcoreproject\\FirstcoreProject.csproj",
+        "projectUniqueName": "C:\\users\\ashgupta25\\desktop\\projects\\networkspace\\FirstCoreProject\\FirstcoreProject.csproj",
         "projectName": "FirstcoreProject",
-        "projectPath": "C:\\users\\ashgupta25\\desktop\\projects\\networkspace\\firstcoreproject\\FirstcoreProject.csproj",
+        "projectPath": "C:\\users\\ashgupta25\\desktop\\projects\\networkspace\\FirstCoreProject\\FirstcoreProject.csproj",
         "packagesPath": "C:\\Users\\ashgupta25\\.nuget\\packages\\",
-        "outputPath": "C:\\users\\ashgupta25\\desktop\\projects\\networkspace\\firstcoreproject\\obj\\",
+        "outputPath": "C:\\users\\ashgupta25\\desktop\\projects\\networkspace\\FirstCoreProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ashgupta25\\AppData\\Roaming\\NuGet\\NuGet.Config"

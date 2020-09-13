@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.6666" branch-rate="1" version="1.9" timestamp="1599999890" lines-covered="6" lines-valid="9" branches-covered="0" branches-valid="0">
+<coverage line-rate="1" branch-rate="1" version="1.9" timestamp="1600002085" lines-covered="9" lines-valid="9" branches-covered="0" branches-valid="0">
   <sources>
     <source>C:\</source>
   </sources>
   <packages>
-    <package name="firstlibrary" line-rate="0.6666" branch-rate="1" complexity="3">
+    <package name="firstlibrary" line-rate="1" branch-rate="1" complexity="3">
       <classes>
-        <class name="firstlibrary.Calculator" filename="users\ashgupta25\desktop\projects\networkspace\firstlibrary\Calculator.cs" line-rate="0.6666" branch-rate="1" complexity="3">
+        <class name="firstlibrary.Calculator" filename="users\ashgupta25\desktop\projects\networkspace\firstlibrary\Calculator.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
             <method name="add" signature="(System.Int32,System.Int32)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -22,11 +22,11 @@
                 <line number="13" hits="1" branch="False" />
               </lines>
             </method>
-            <method name="multiply" signature="(System.Int32,System.Int32)" line-rate="0" branch-rate="1" complexity="1">
+            <method name="multiply" signature="(System.Int32,System.Int32)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="15" hits="0" branch="False" />
-                <line number="16" hits="0" branch="False" />
-                <line number="17" hits="0" branch="False" />
+                <line number="15" hits="1" branch="False" />
+                <line number="16" hits="1" branch="False" />
+                <line number="17" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
@@ -37,9 +37,9 @@
             <line number="11" hits="1" branch="False" />
             <line number="12" hits="1" branch="False" />
             <line number="13" hits="1" branch="False" />
-            <line number="15" hits="0" branch="False" />
-            <line number="16" hits="0" branch="False" />
-            <line number="17" hits="0" branch="False" />
+            <line number="15" hits="1" branch="False" />
+            <line number="16" hits="1" branch="False" />
+            <line number="17" hits="1" branch="False" />
           </lines>
         </class>
       </classes>

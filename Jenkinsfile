@@ -10,22 +10,14 @@ pipeline {
         }
         stage('Unit Test'){
             steps{
-                try{
-	                step{bat 'dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura'}
-                }
-                catch(e){
-                    step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: 'ashu10832@gmail.com', sendToIndividuals: false])
-                }
+	            bat 'dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura'
+                step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: 'ashu10832@gmail.com', sendToIndividuals: false])
             }
         }
         stage('Code Coverage'){
             steps{
-                try{
-                    step{cobertura autoUpdateHealth: false, autoUpdateStability: false, coberturaReportFile: '**\\FirstcoreProject\\coverage.cobertura.xml', conditionalCoverageTargets: '70, 80, 80', failUnhealthy: true, failUnstable: true, lineCoverageTargets: '80, 80, 80', maxNumberOfBuilds: 0, methodCoverageTargets: '80, 80, 80', onlyStable: false, sourceEncoding: 'ASCII', zoomCoverageChart: false}
-                }
-                catch(e){
-                    step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: 'ashu10832@gmail.com', sendToIndividuals: false])
-                }
+                cobertura autoUpdateHealth: false, autoUpdateStability: false, coberturaReportFile: '**\\FirstcoreProject\\coverage.cobertura.xml', conditionalCoverageTargets: '70, 80, 80', failUnhealthy: true, failUnstable: true, lineCoverageTargets: '80, 80, 80', maxNumberOfBuilds: 0, methodCoverageTargets: '80, 80, 80', onlyStable: false, sourceEncoding: 'ASCII', zoomCoverageChart: false
+                step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: 'ashu10832@gmail.com', sendToIndividuals: false])
             }
         }
         stage('Publish'){
